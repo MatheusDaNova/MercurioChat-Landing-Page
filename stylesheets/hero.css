@@ -1,0 +1,39 @@
+
+.hero {
+    display: flex;
+    text-align: center;
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--light-gray);
+  }
+  
+  .hero-logo {
+    width: 60%;
+    margin: 5vh auto;
+  }
+  
+  .hero-logo img{
+    height: 50vh;
+  }
+  
+  .screenshot {
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .screenshot img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
