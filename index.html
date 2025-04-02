@@ -20,11 +20,20 @@
     <div class="logo">
         <img src="assets/neuralLogo.svg" alt="NeuralWeb Logo">
     </div>
+
+    <button class="menu-hamburger">☰</button>
+
     <ul class="nav-links">
         <li><a href="#how-it-works">Como Funciona</a></li>
         <li><a href="#benefits">Benefícios</a></li>
         <li><a href="#ideal-for">Quem Usa</a></li>
         <li><a href="#pricing">Planos</a></li>
+
+        <div class="mobile-buttons">
+          <button class="btn btn-accent">Sign up</button>
+          <button class="btn btn-primary">Log in</button>
+        </div>
+
     </ul>
     <div class="nav-buttons">
       <button class="btn btn-outline">Sign up</button>
@@ -51,21 +60,28 @@
   <section class="features container">
     <div class="feature">
       <div class="feature-icon blue">
-        <img src="/api/placeholder/40/40" alt="Card Icon" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+        </svg>        
       </div>
       <h3>Fácil de customizar</h3>
       <p>Nossa interface fácil e intuitiva possibilita facilidade para você na hora de usá-lo em seu negócio</p>
     </div>
     <div class="feature">
       <div class="feature-icon purple">
-        <img src="/api/placeholder/40/40" alt="Payment Icon" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+        </svg>
       </div>
       <h3>Pagamento flexível</h3>
       <p>Aceitamos várias formas de pagamento, e temos alguns planos diponíveis para mais acessibilidade para você</p>
     </div>
     <div class="feature">
       <div class="feature-icon yellow">
-        <img src="/api/placeholder/40/40" alt="All in One Icon" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+        </svg>
+              
       </div>
       <h3>Facilidade de uso</h3>
       <p>Nosso sistema é bem fácil de usar e além disso contamos com um suporte para tirar suas dúvidas</p>
@@ -197,9 +213,9 @@
         <p>Para empreendedores iniciantes</p>
         <div class="plan-price-mensal">R$59<span>/mês</span></div>
         <ul class="plan-features">
-          <li>Maior flexibilidade – Assine mês a mês, cancele quando quiser</li>
-          <li> Baixo Investimento Inicial – Comece agora sem compromissos longos</li>
-          <li>Acesso Completo – Todos os recursos disponíveis sem restrições</li>
+          <li><span>Maior flexibilidade </span>– Assine mês a mês, cancele quando quiser</li>
+          <li><span>Baixo Investimento Inicial </span>– Comece agora sem compromissos longos</li>
+          <li><span>Acesso Completo –</span> Todos os recursos disponíveis sem restrições</li>
         </ul>
         <button class="btn btn-accent">Começar agora</button>
       </div>
@@ -210,9 +226,9 @@
             <span>Aproximadamente R$83,33/mês</span>
         </div>
         <ul class="plan-features">
-          <li> Maior Economia – Poupe R$201 no ano em relação ao plano mensal</li>
-          <li>Tranquilidade Garantida – Acesso ininterrupto por 12 meses</li>
-          <li>Compromisso Profissional – Ideal para quem quer resultados duradouros</li>
+          <li><span>Maior Economia </span>– Poupe R$201 no ano em relação ao plano mensal</li>
+          <li><span>Tranquilidade Garantida </span>– Acesso ininterrupto por 12 meses</li>
+          <li><span>Compromisso Profissional </span>– Ideal para quem quer resultados duradouros</li>
         </ul>
         <button class="btn btn-accent">Começar agora</button>
       </div>
@@ -223,9 +239,9 @@
             <span>Aproximadamente R$91,65/mês</span>
         </div>
         <ul class="plan-features">
-          <li>Desconto Exclusivo – Economize R$51 comparado ao mensal</li>
-          <li>Compromisso Inteligente – Pague menos e mantenha o acesso garantido</li>
-          <li>Foco no Crescimento – Tempo suficiente para obter resultados reais</li>
+          <li><span>Desconto Exclusivo</span>– Economize R$51 comparado ao mensal</li>
+          <li><span>Compromisso Inteligente</span>– Pague menos e mantenha o acesso garantido</li>
+          <li><span>Foco no Crescimento</span>– Tempo suficiente para obter resultados reais</li>
         </ul>
         <button class="btn btn-accent">Fale conosco</button>
       </div>
@@ -269,7 +285,7 @@
   <!-- CTA Section -->
   <section class="cta container">
     <div class="cta-text">
-      <h2>Questions? Let's talk</h2>
+      <h2>Ainda tem dúvidas? Converse com ele agora!</h2>
       <p>Contact us through our 24/7 live chat. We're always happy to help!</p>
       <button class="btn btn-accent">Get started</button>
     </div>
@@ -292,4 +308,5 @@
     </div>
   </footer>
 </body>
+<script src="scripts/menuHamburguer.js"></script>
 </html>

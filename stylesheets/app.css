@@ -35,16 +35,10 @@ section{
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
 }
 
 .btn {
@@ -60,6 +54,10 @@ header {
   background-color: var(--primary);
   color: white;
 }
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary);
+}
 
 .btn-outline {
   background-color: transparent;
@@ -67,9 +65,20 @@ header {
   color: var(--light);
 }
 
+.btn-outline:hover{
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
 .btn-accent {
   background-color: var(--accent);
   color: var(--dark);
+  border: 1px solid var(--accent);
+}
+
+.btn-accent:hover {
+  background-color: var(--dark);
+  color: var(--accent);
 }
 
 .section-title {

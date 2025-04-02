@@ -15,6 +15,7 @@
     border-radius: 10px;
     width: 30vw;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
   
   .plan:hover {
@@ -54,6 +55,11 @@
   .plan-features li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .plan-features span{
+    font-size: 1.1rem;
+    font-weight: 800;
   }
   
   .plan-features li:last-child {
