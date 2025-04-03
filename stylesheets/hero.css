@@ -1,15 +1,17 @@
 
 .hero {
     display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 60px 0;
-    flex-direction: column;
     align-items: center;
+    justify-items: center;
   }
   
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    max-width: 800px;
   }
   
   .hero p {
@@ -17,9 +19,16 @@
     margin: 0 auto 30px;
     color: var(--light-gray);
   }
+
+  .hero-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .hero-logo {
-    width: 60%;
+    width: 50%;
     margin: 5vh auto;
   }
   
@@ -38,9 +47,49 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
+  @media screen and (max-width:1200px) {
+    .hero-logo img{
+      height: 45vh;
+      width: 80%;
+    }
+    .hero h1{
+      font-size: 2.5rem;
+    }
+    .hero-text h1,
+    .hero-text p,
+    .hero-text h2{
+      max-width: 80%;
+    }
+  }
+
   @media screen and (max-width:900px) {
     .hero-logo img{
       height: 40vh;
+      width: 75%;
+    }
+    .hero h1{
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width:660px) {
+    .hero{
+      flex-direction: column;
+    }
+    .hero-logo img{
+      height: 25vh
+    }
+    .hero p {
+      max-width: 350px;
+      margin: 0 auto 30px;
+    }
+    .hero-text {
       width: 100%;
+      gap: 1vh;
+    }
+    .hero-text h1,
+    .hero-text p,
+    .hero-text h2{
+      max-width: 80%;
     }
   }

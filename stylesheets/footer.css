@@ -1,0 +1,35 @@
+footer {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  footer img{
+    height: 4vh;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 670px){
+    .footer-content{
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .footer-content a{
+        font-size: 0.7rem;
+    }
+  }
