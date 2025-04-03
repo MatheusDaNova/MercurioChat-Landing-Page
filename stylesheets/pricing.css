@@ -5,7 +5,7 @@
   .plans {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 4rem;
     margin: 4rem;
   }
   
@@ -13,8 +13,8 @@
     background-color: rgba(255, 255, 255, 0.05);
     padding: 40px 30px;
     border-radius: 10px;
-    width: 30vw;
     transition: all 0.3s ease;
+    max-width: 400px;
     cursor: pointer;
   }
   
