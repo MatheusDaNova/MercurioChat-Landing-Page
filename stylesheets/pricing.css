@@ -82,10 +82,11 @@
       display: flex;
       flex-direction: column;
       margin: auto;
-      gap:5vh;
+      row-gap: 4rem;
     }
     .plan{
       margin: auto;
       width: 65%;
     }
+
   }
