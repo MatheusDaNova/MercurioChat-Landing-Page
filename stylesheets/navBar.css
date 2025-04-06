@@ -8,15 +8,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    height: 12vh;
   }
   
   .logo img {
-    max-height: 10vh;
+   height: 8vh;
+   margin: 1rem;
+   padding: 5px;
   }
   
   .nav-links {
     display: flex;
     list-style: none;
+    margin: auto;
   }
   
   .nav-links li {

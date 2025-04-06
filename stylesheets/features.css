@@ -9,7 +9,12 @@
     text-align: center;
     padding: 20px;
   }
-  
+
+  .feature:hover{
+    transform: translateY(-10px);
+    transition: 1s
+  }
+
   .feature-icon {
     height: 80px;
     width: 80px;
@@ -42,7 +47,7 @@
   
   .feature p {
     color: var(--light-gray);
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   @media  screen and (max-width:600px) {

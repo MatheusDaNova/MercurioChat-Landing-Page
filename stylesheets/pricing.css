@@ -22,6 +22,10 @@
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  .plan h2{
+    font-size: 2.5rem;
+  }
   
   .plan h3 {
     font-size: 1.5rem;
@@ -76,6 +80,13 @@
     filter: brightness(1.15);
   }
 
+  @media screen and (max-width:950px) {
+    .plans li,
+    .plans li span {
+      font-size: 0.8rem;
+    }
+  }
+
   @media screen and (max-width:850px) {
 
     .plans{
@@ -84,9 +95,36 @@
       margin: auto;
       row-gap: 4rem;
     }
+    .plans li{
+      display: none;
+    }
     .plan{
+      align-items: center;
+      justify-items: center;
       margin: auto;
       width: 65%;
     }
+    .plan-price{
+      justify-items: center;
+    }
+    .plan-price h2,
+    .plan-price h3,
+    .plan-price p,
+    .plan-price span{
+      margin: auto;
+    }
 
+  }
+
+  @media screen and (max-width:600px) {
+    .plan{
+      align-items: left;
+      justify-items: left;
+    }
+    .plan-price h2,
+    .plan-price h3,
+    .plan-price p,
+    .plan-price span{
+      margin: 0;
+    }
   }
