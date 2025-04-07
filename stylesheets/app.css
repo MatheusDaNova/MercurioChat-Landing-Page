@@ -43,11 +43,18 @@ section{
 
 .btn {
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: .8rem;
 }
 
 .btn-primary {
