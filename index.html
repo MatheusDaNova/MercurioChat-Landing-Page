@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="stylesheets/footer.css">
   <link rel="stylesheet" href="stylesheets/faq.css">
   <link rel="stylesheet" href="stylesheets/floatingButton.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
   <a href="https://wa.me/5521992109778?text=Quero%20conhecer%20o%20MercurioChat" target="_blank" class="floating-button">
@@ -56,11 +57,10 @@
       <h1>MercurioChat:</h1>
       <h2>Transforme seu Atendimento no WhatsApp</h2>
       <p>Assistente de IA para otimizar o atendimento do seu negócio no WhatsApp. Aumente vendas, melhore a satisfação e economize tempo.</p>
-      <a class="btn btn-accent" href="https://client.mercuriochat.com.br/register">Comece agora</a>
+      <a id="hero-button" class="btn btn-accent" href="https://client.mercuriochat.com.br/register">Comece agora</a>
     </div>
     <div class="hero-logo">
-      <img src="assets/mercurioWhite.svg" alt="MercurioChat Logo"/>
-    </div>
+      <img id="logoHero" src="assets/mercurioWhite.svg" alt="MercurioChat Logo"/>
   </section>
   
   <!-- Features Section -->
@@ -319,4 +319,5 @@
   </footer>
 </body>
 <script src="scripts/menuHamburguer.js"></script>
+<script src="scripts/heroAnimation.js"></script>
 </html>
