@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuHamburger = document.querySelector(".menu-hamburger");
   const navLinks = document.querySelector(".nav-links");
+  const heroButton = document.getElementById("hero-button");
   let menuOverlay;
 
   function createOverlay() {
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuHamburger.innerHTML = "✕";
     menuOverlay.classList.add("active");
     document.body.style.overflow = "hidden";
+    heroButton.style.zIndex = "1";
   }
 
   function closeMenu() {

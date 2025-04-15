@@ -12,7 +12,11 @@ window.addEventListener("load", function () {
   const otherSections = document.querySelectorAll(
     "body > *:not(.hero):not(script)"
   );
-  gsap.set(otherSections, { autoAlpha: 0, y: 50 });
+  gsap.set(otherSections, {
+    autoAlpha: 0,
+    y: 50,
+    visibility: "hidden",
+  });
 
   // Centralize a seção hero inicialmente, para manter o logo no centro
   gsap.set(heroSection, {
@@ -51,7 +55,7 @@ window.addEventListener("load", function () {
   // Sequência de animação
   tl.to(logo, {
     height: "50vh",
-    delay: 0.8,
+    delay: 0.5,
     autoAlpha: 1,
   })
 
