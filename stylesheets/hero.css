@@ -65,14 +65,13 @@
 
   @media screen and (max-width:660px) {
   .hero-text{
-    display: none;
+    opacity: 0;
   }
   .hero {
     flex-direction: column;
   }
  .animation-done .hero-text{
-  display: flex;
-  transition: 2s ease-in;
+    opacity: 1;
  }
  .animation-done .hero-logo img {
     height: 25vh;

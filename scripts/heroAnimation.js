@@ -12,10 +12,17 @@ window.addEventListener("load", function () {
   const otherSections = document.querySelectorAll(
     "body > *:not(.hero):not(script)"
   );
+
+  const isMobile = window.matchMedia("(max-width: 860px)").matches;
+
   gsap.set(otherSections, {
     autoAlpha: 0,
     y: 50,
     visibility: "hidden",
+  });
+
+  gsap.set(heroText, {
+    display: isMobile ? "none" : "flex",
   });
 
   // Centralize a seção hero inicialmente, para manter o logo no centro
@@ -38,7 +45,7 @@ window.addEventListener("load", function () {
 
   // Ajusta o tamanho do logo sem mudar sua posição
   gsap.set(logo, {
-    height: "80vh",
+    height: isMobile ? "100vh" : "80vh",
     zIndex: 100,
     marginTop: 0,
     transformOrigin: "center center",
@@ -54,11 +61,13 @@ window.addEventListener("load", function () {
 
   // Sequência de animação
   tl.to(logo, {
-    height: "50vh",
-    delay: 0.5,
+    height: isMobile ? "40vh" : "50vh",
+    delay: 0.8,
     autoAlpha: 1,
   })
-
+    .to(heroText, {
+      display: "flex",
+    })
     .to(
       heroSection,
       {
