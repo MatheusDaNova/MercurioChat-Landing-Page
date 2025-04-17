@@ -64,12 +64,6 @@
   }
 
   @media screen and (max-width:660px) {
-  .hero-text{
-    opacity: 0;
-  }
-  .hero {
-    flex-direction: column;
-  }
  .animation-done .hero-text{
     opacity: 1;
  }

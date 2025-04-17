@@ -62,7 +62,8 @@ window.addEventListener("load", function () {
   // Sequência de animação
   tl.to(logo, {
     height: isMobile ? "40vh" : "50vh",
-    delay: 0.8,
+    delay: 0.7,
+    duration: 1,
     autoAlpha: 1,
   })
     .to(heroText, {
@@ -86,7 +87,7 @@ window.addEventListener("load", function () {
           heroSection.classList.add("animation-done");
         },
       },
-      "-=0.5"
+      "-=0.4"
     )
     .to(
       "#hero-button",
