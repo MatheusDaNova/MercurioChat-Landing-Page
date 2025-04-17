@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuHamburger = document.querySelector(".menu-hamburger");
-  const navLinks = document.querySelector(".nav-links");
-  const heroButton = document.getElementById("hero-button");
+  const navLinks = document.querySelector(".nav-links-mobile");
+  const navBarMobile = document.querySelector(".mobile-navbar");
+  const heroSection = document.querySelector(".hero");
   let menuOverlay;
 
   function createOverlay() {
@@ -17,15 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.style.display = "flex";
     menuHamburger.innerHTML = "✕";
     menuOverlay.classList.add("active");
+    navBarMobile.classList.add("active");
     document.body.style.overflow = "hidden";
-    heroButton.style.zIndex = "1";
+    heroSection.style.opacity = 0;
   }
 
   function closeMenu() {
     navLinks.classList.remove("active");
     menuHamburger.innerHTML = "☰";
     menuOverlay.classList.remove("active");
+    navBarMobile.classList.remove("active");
     document.body.style.overflow = "";
+    heroSection.style.opacity = 1;
   }
 
   // Função para alternar o menu

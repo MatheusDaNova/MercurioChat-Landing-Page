@@ -10,17 +10,21 @@
   }
   
   .plan {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 40px 30px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    max-width: 400px;
-    cursor: pointer;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: #232526;
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border: 1px solid #333;
   }
   
   .plan:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   }
 
   .plan h2{
@@ -31,26 +35,100 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
+
+  .popular-plan {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 2px solid #00B0FF;
+    z-index: 2;
+  }
   
-  .plan-price,
-  .plan-price-mensal {
-    font-size: 2.5rem;
-    margin: 20px 0;
+  .popular-plan:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+  
+  .popular-tag {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #00B0FF;
+    color: #121212;
     font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .plan-header {
+    text-align: center;
+    margin-bottom: 25px;
   }
   
   .plan-price {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .plan-price span,
-  .plan-price-mensal span {
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--light-gray);
+    text-align: center;
+    margin: 30px 0;
   }
   
+  .plan-price h2 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .plan-price span {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .plan-savings {
+    margin-top: 10px;
+    padding: 5px 0;
+    background: rgba(0, 176, 255, 0.1);
+    color: #00B0FF;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .feature-highlight {
+    color: #00B0FF;
+    font-weight: bold;
+  }
+  
+  .btn-cta {
+    background: linear-gradient(45deg, #00B0FF, #0091EA);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 176, 255, 0.4);
+  }
+  
+  .btn-cta:hover {
+    background: linear-gradient(45deg, #0091EA, #0064b7);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 176, 255, 0.6);
+  }
+
+  .btn-plan {
+    background-color: #0091EA;
+    color: var(--light);
+    border: 1px solid #0091EA;
+  }
+
+  .btn-plan:hover{
+    background-color: #232526;
+    color: #0091EA;
+    border: 1px solid #0091EA;
+  }
+
   .plan-features {
     list-style-type: none;
     margin: 20px 0;
@@ -72,7 +150,7 @@
 
   #anual-plan{
     transform: scale(1.1);
-    background-color: var(--secondary);  
+    background-color:  #003a69;  
   }
 
   #anual-plan:hover{
@@ -80,7 +158,14 @@
     filter: brightness(1.15);
   }
 
-  @media screen and (max-width:950px) {
+  @media screen and (max-width:1000px) {
+    .plans{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
+      align-items: center;
+    }
+
     .plans li,
     .plans li span {
       font-size: 0.8rem;
@@ -89,12 +174,6 @@
 
   @media screen and (max-width:850px) {
 
-    .plans{
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      row-gap: 4rem;
-    }
     .plans li{
       display: none;
     }
@@ -120,6 +199,11 @@
     .plan{
       align-items: left;
       justify-items: left;
+      min-width: 220px;
+    }
+    .plans{
+      width: 90%;
+      margin: auto;
     }
     .plan-price h2,
     .plan-price h3,
@@ -127,4 +211,12 @@
     .plan-price span{
       margin: 0;
     }
+    .plan-price-mensal h2,
+    .plan-price h2{
+      font-size: 1.7rem;
+    }
+
+    .plan-price-mensal span {
+      font-size: 0.8rem;
+    };
   }

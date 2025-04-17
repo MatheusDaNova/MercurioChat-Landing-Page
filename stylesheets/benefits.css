@@ -11,9 +11,10 @@
 .card {
     background: var(--dark);
     border-radius: 10px;
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
 .card:hover {
@@ -22,5 +23,16 @@
 }
 
 .card h3{
+    display: flex;
     color: var(--primary);
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: .75rem;
+}
+
+.card h3 span{
+    height: 36px;
+    font-size: 36px;
+    color: var(--light);
 }

@@ -62,9 +62,7 @@ window.addEventListener("load", function () {
     .to(
       heroSection,
       {
-        position: "relative",
-        height: "auto",
-        display: "flex",
+        clearProps: "all",
       },
       "-=0.5"
     )
@@ -75,6 +73,16 @@ window.addEventListener("load", function () {
         y: 0,
         duration: 1,
         zIndex: 101,
+        onComplete: () => {
+          heroSection.classList.add("animation-done");
+        },
+      },
+      "-=0.5"
+    )
+    .to(
+      "#hero-button",
+      {
+        opacity: 1,
       },
       "-=0.5"
     )
@@ -89,7 +97,36 @@ window.addEventListener("load", function () {
       "-=0.2"
     );
 
+  tl.set(heroSection, { zIndex: 1 });
+
   tl.call(function () {
     logo.classList.add("float-active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.from("#logoHero", {
+    duration: 1.5,
+    x: -300,
+    opacity: 0,
+    scale: 0.5,
+    ease: "back.out(1.7)",
+    delay: 0.5,
+  });
+
+  gsap.from(".hero-text h1, .hero-text h2", {
+    duration: 1,
+    y: 50,
+    opacity: 0,
+    stagger: 0.3,
+    ease: "power2.out",
+  });
+
+  gsap.from("#hero-button", {
+    duration: 0.8,
+    scale: 0,
+    opacity: 0,
+    ease: "elastic.out(1, 0.3)",
+    delay: 1.5,
   });
 });

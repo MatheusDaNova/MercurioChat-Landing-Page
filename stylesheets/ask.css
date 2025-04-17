@@ -53,6 +53,10 @@
     font-weight: 600;
   }
 
+  .ask a{
+    transition: .5s ease;
+  }
+
   @media screen and (max-width: 850px) {
     .ask{
         flex-direction: column;
