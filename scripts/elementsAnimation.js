@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".step", {
   scrollTrigger: {
     trigger: ".steps",
-    start: "top 80%",
+    start: "top 15%",
   },
   x: -100,
   opacity: 0,
@@ -15,7 +15,7 @@ gsap.from(".step", {
 gsap.from(".accordion-item", {
   scrollTrigger: {
     trigger: ".accordion",
-    start: "top 80%",
+    start: "top 15%",
   },
   x: -100,
   opacity: 0,
@@ -24,12 +24,12 @@ gsap.from(".accordion-item", {
   ease: "power2.out",
 });
 
-// Animações individuais para os cards (opcional)
+// Animações individuais para os cards
 document.querySelectorAll(".fade-up").forEach((el) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: el,
-      start: "top 80%",
+      start: "top 15%",
       toggleActions: "play none none none",
     },
   });
